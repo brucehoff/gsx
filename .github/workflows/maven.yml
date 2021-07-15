@@ -27,7 +27,8 @@ jobs:
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         file: target/gsxconfig-1.0-SNAPSHOT.jar
-        asset_name: gsxconfig
+        asset_name: gsxconfig.jar
         tag: ${{ github.ref }}
         overwrite: true
         body: "This is an executable jar file" 
+
