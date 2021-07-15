@@ -21,4 +21,13 @@ jobs:
         java-version: 1.8
     - name: Build with Maven
       run: mvn -B package --file pom.xml
- 
+    - name: Upload executable jar file to upload-release
+# for more details see https://github.com/marketplace/actions/upload-files-to-a-github-release
+      uses: svenstaro/upload-release-action@v2
+      with:
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        file: target/gsxconfig-1.0-SNAPSHOT.jar
+        asset_name: gsxconfig
+        tag: ${{ github.ref }}
+        overwrite: true
+        body: "This is an executable jar file" 

@@ -82,6 +82,13 @@
 					<descriptorRefs>
 						<descriptorRef>jar-with-dependencies</descriptorRef>
 					</descriptorRefs>
+        			<archive>
+          				<manifest>
+            				<mainClass>gsxconfig.GSXConfig</mainClass>
+          				</manifest>
+        			</archive>
+        			<!-- to avoid the annoying "-jar-with-dependencies" suffix in the name: -->
+					<appendAssemblyId>false</appendAssemblyId>
 				</configuration>
 			</plugin>
 			<plugin>
