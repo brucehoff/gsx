@@ -7,12 +7,13 @@
 - On a laptop device with wifi, ensure you have the Java Runtime Environment.  E.g., from a shell command line you should be able to:
 
 ```
-java -version
+$ java -version
+
 java version "1.8.0_291"
 ```
 
 
-- Visit [this page](https://github.com/brucehoff/gsx/releases/tag/main) and, under "Assets" find a link labeled,"gsxconfig.jar". Click to download.  This is an executable .jar file.  You should be able to double click on it and an application will start up.  Alternatively, from the command line:
+- Visit [the releases page](https://github.com/brucehoff/gsx/releases/tag/main) and, under "Assets" find a link labeled "gsxconfig.jar". Click to download.  This is an executable .jar file.  You should be able to double click on it and an application will start up.  Alternatively, from the command line:
 
 ```
 java -jar /path/to/gsxconfig.jar
@@ -24,7 +25,8 @@ A small application will appear.
 
 ### Update your WiFi network name and password
 
-- Turn off (unplug) the GSX module.  Flip the small switch. Turn it on (plug it in) again.
+- Begin with the configuration application NOT running.
+- Turn off (unplug) the GSX module.  Flip the small switch from run mode to configure mode. Turn it on (plug it in) again.
 - On your laptop go to your wifi settings and find the module.  Selecting it will create an _ad hoc_ network between your laptop and the module.
 - Now run the gsxconfig.jar app' as explained above.  Click 'Upload'.  This transfers the configuration from the module to your laptop.
 - Enter the SSID (i.e., your network name).  
